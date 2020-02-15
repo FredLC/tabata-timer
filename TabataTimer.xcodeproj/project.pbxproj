@@ -7,13 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		481FD36223F896A400394B08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FD36123F896A400394B08 /* AppDelegate.swift */; };
 		481FD36423F896A400394B08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FD36323F896A400394B08 /* SceneDelegate.swift */; };
 		481FD36623F896A400394B08 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FD36523F896A400394B08 /* WorkoutVC.swift */; };
 		481FD36923F896A400394B08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481FD36723F896A400394B08 /* Main.storyboard */; };
 		481FD36B23F896A500394B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481FD36A23F896A500394B08 /* Assets.xcassets */; };
 		481FD36E23F896A500394B08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481FD36C23F896A500394B08 /* LaunchScreen.storyboard */; };
+		481FD37D23F8A2AB00394B08 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FD37C23F8A2AB00394B08 /* IntentHandler.swift */; };
+		481FD38123F8A2AB00394B08 /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 481FD37A23F8A2AB00394B08 /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4850BF5A23F8B4A4001C5037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FD36123F896A400394B08 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		481FD37F23F8A2AB00394B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 481FD35623F896A400394B08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 481FD37923F8A2AB00394B08;
+			remoteInfo = IntentHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		481FD38523F8A2AB00394B08 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				481FD38123F8A2AB00394B08 /* IntentHandler.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		481FD35E23F896A400394B08 /* TabataTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabataTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,10 +51,20 @@
 		481FD36D23F896A500394B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		481FD36F23F896A500394B08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		481FD37523F89FCD00394B08 /* TabataTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TabataTimer.entitlements; sourceTree = "<group>"; };
+		481FD37A23F8A2AB00394B08 /* IntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		481FD37C23F8A2AB00394B08 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		481FD37E23F8A2AB00394B08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		481FD35B23F896A400394B08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		481FD37723F8A2AB00394B08 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				481FD36023F896A400394B08 /* TabataTimer */,
+				481FD37B23F8A2AB00394B08 /* IntentHandler */,
 				481FD35F23F896A400394B08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				481FD35E23F896A400394B08 /* TabataTimer.app */,
+				481FD37A23F8A2AB00394B08 /* IntentHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +107,15 @@
 			path = TabataTimer;
 			sourceTree = "<group>";
 		};
+		481FD37B23F8A2AB00394B08 /* IntentHandler */ = {
+			isa = PBXGroup;
+			children = (
+				481FD37C23F8A2AB00394B08 /* IntentHandler.swift */,
+				481FD37E23F8A2AB00394B08 /* Info.plist */,
+			);
+			path = IntentHandler;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +126,34 @@
 				481FD35A23F896A400394B08 /* Sources */,
 				481FD35B23F896A400394B08 /* Frameworks */,
 				481FD35C23F896A400394B08 /* Resources */,
+				481FD38523F8A2AB00394B08 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				481FD38023F8A2AB00394B08 /* PBXTargetDependency */,
 			);
 			name = TabataTimer;
 			productName = TabataTimer;
 			productReference = 481FD35E23F896A400394B08 /* TabataTimer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		481FD37923F8A2AB00394B08 /* IntentHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 481FD38223F8A2AB00394B08 /* Build configuration list for PBXNativeTarget "IntentHandler" */;
+			buildPhases = (
+				481FD37623F8A2AB00394B08 /* Sources */,
+				481FD37723F8A2AB00394B08 /* Frameworks */,
+				481FD37823F8A2AB00394B08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentHandler;
+			productName = IntentHandler;
+			productReference = 481FD37A23F8A2AB00394B08 /* IntentHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +166,9 @@
 				ORGANIZATIONNAME = "Fred Lefevre";
 				TargetAttributes = {
 					481FD35D23F896A400394B08 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					481FD37923F8A2AB00394B08 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -118,6 +187,7 @@
 			projectRoot = "";
 			targets = (
 				481FD35D23F896A400394B08 /* TabataTimer */,
+				481FD37923F8A2AB00394B08 /* IntentHandler */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +203,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		481FD37823F8A2AB00394B08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,13 +217,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4850BF5A23F8B4A4001C5037 /* AppDelegate.swift in Sources */,
 				481FD36623F896A400394B08 /* WorkoutVC.swift in Sources */,
-				481FD36223F896A400394B08 /* AppDelegate.swift in Sources */,
 				481FD36423F896A400394B08 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		481FD37623F8A2AB00394B08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481FD37D23F8A2AB00394B08 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		481FD38023F8A2AB00394B08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 481FD37923F8A2AB00394B08 /* IntentHandler */;
+			targetProxy = 481FD37F23F8A2AB00394B08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		481FD36723F896A400394B08 /* Main.storyboard */ = {
@@ -285,6 +378,7 @@
 		481FD37323F896A500394B08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TabataTimer/TabataTimer.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -306,6 +400,7 @@
 		481FD37423F896A500394B08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TabataTimer/TabataTimer.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -319,6 +414,46 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fredlefevre.TabataTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		481FD38323F8A2AB00394B08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fredlefevre.TabataTimer.IntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		481FD38423F8A2AB00394B08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fredlefevre.TabataTimer.IntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -341,6 +476,15 @@
 			buildConfigurations = (
 				481FD37323F896A500394B08 /* Debug */,
 				481FD37423F896A500394B08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		481FD38223F8A2AB00394B08 /* Build configuration list for PBXNativeTarget "IntentHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481FD38323F8A2AB00394B08 /* Debug */,
+				481FD38423F8A2AB00394B08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
