@@ -14,6 +14,8 @@ class WorkoutVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(handleSiriRequest), name: NSNotification.Name("workoutStartedNotification"), object: nil)
+        
         INPreferences.requestSiriAuthorization { (status) in
             if status == .authorized {
                 print("Siri authorized")
@@ -21,6 +23,14 @@ class WorkoutVC: UIViewController {
                 print("Siri not authorized ☹️")
             }
         }
+    }
+    
+    @objc func handleSiriRequest() {
+        guard let startWorkoutIntent = DataService.shared.startWorkoutIntent else {
+            return
+        }
+        
+        print(startWorkoutIntent)
     }
     
 

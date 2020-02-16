@@ -20,13 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        guard let intent = userActivity.interaction?.intent else {
-            print("AppDelegate: start workout intent: FALSe")
+        guard let intent = userActivity.interaction?.intent as? INStartWorkoutIntent else {
             return false
         }
         
-        print("AppDelegate start workout intent: TRUE")
-        print(intent)
+        DataService.shared.startWorkoutIntent = intent
+        
+        NotificationCenter.default.post(name: NSNotification.Name("workoutStartedNotification"), object: nil)
+        
         return true
     }
 

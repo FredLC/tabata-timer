@@ -15,6 +15,7 @@
 		481FD37D23F8A2AB00394B08 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FD37C23F8A2AB00394B08 /* IntentHandler.swift */; };
 		481FD38123F8A2AB00394B08 /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 481FD37A23F8A2AB00394B08 /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4850BF5A23F8B4A4001C5037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FD36123F896A400394B08 /* AppDelegate.swift */; };
+		4850BF5F23F8BEDB001C5037 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4850BF5E23F8BEDB001C5037 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		481FD37A23F8A2AB00394B08 /* IntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		481FD37C23F8A2AB00394B08 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		481FD37E23F8A2AB00394B08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4850BF5E23F8BEDB001C5037 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +97,12 @@
 		481FD36023F896A400394B08 /* TabataTimer */ = {
 			isa = PBXGroup;
 			children = (
+				4850BF5D23F8BECF001C5037 /* Extensions */,
+				4850BF5C23F8BEC6001C5037 /* Services */,
+				4850BF5B23F8BEAE001C5037 /* Controllers */,
 				481FD37523F89FCD00394B08 /* TabataTimer.entitlements */,
 				481FD36123F896A400394B08 /* AppDelegate.swift */,
 				481FD36323F896A400394B08 /* SceneDelegate.swift */,
-				481FD36523F896A400394B08 /* WorkoutVC.swift */,
 				481FD36723F896A400394B08 /* Main.storyboard */,
 				481FD36A23F896A500394B08 /* Assets.xcassets */,
 				481FD36C23F896A500394B08 /* LaunchScreen.storyboard */,
@@ -114,6 +118,29 @@
 				481FD37E23F8A2AB00394B08 /* Info.plist */,
 			);
 			path = IntentHandler;
+			sourceTree = "<group>";
+		};
+		4850BF5B23F8BEAE001C5037 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				481FD36523F896A400394B08 /* WorkoutVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4850BF5C23F8BEC6001C5037 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4850BF5E23F8BEDB001C5037 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4850BF5D23F8BECF001C5037 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +247,7 @@
 				4850BF5A23F8B4A4001C5037 /* AppDelegate.swift in Sources */,
 				481FD36623F896A400394B08 /* WorkoutVC.swift in Sources */,
 				481FD36423F896A400394B08 /* SceneDelegate.swift in Sources */,
+				4850BF5F23F8BEDB001C5037 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
